@@ -35,12 +35,10 @@
 						</header>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<p>
-									I am a freelancer fine arts student majoring in sculpture. I enjoy doing illustrations, sculpting and creating 3D models.
-									I can make 3D models consisting of many elements, such as accessories and different materials.
-									I can do organic modeling and hard surface modeling. What motivates me most is producing satisfactory 
-									results that exceed the needs of my clients. I seek to learn new tools and skills that support my foundation.
-								</p>
+								<p id="aboutme"></p>
+								<script>
+									fetch("text/aboutme.txt").then(res => res.text()).then(res => document.getElementById('aboutme').innerHTML = res)
+								</script>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
